@@ -1,0 +1,36 @@
+body
+	background $bg-color
+
+
+#sign-of-the-horns
+	background $sign-of-the-horns-color
+	width $sign-of-the-horns-width
+	height @width - 25%
+	border-top (@height - 73%) solid $sign-of-the-horns-color
+	margin auto
+	border-radius 0  0 50px 50px
+	position relative
+
+	&:before
+		width $sign-of-the-horns-finger-width
+		height 120px
+		content ""
+		background $sign-of-the-horns-color
+		position absolute
+		top -120px
+		border-radius 20px
+		box-shadow (@width + $stroke-size) $sign-of-the-horns-top-finger 0 $sign-of-the-horns-color, (@width + $stroke-size) $sign-of-the-horns-top-finger 0 $stroke-size $bg-color, ((@width * 2) + ($stroke-size * 2)) $sign-of-the-horns-top-finger 0 $sign-of-the-horns-color, ((@width * 2) + ($stroke-size * 2)) $sign-of-the-horns-top-finger 0 $stroke-size $bg-color, ((@width * 3) + ($stroke-size * 3)) 0 0 $sign-of-the-horns-color
+
+	&:after
+		width 100px
+		height $sign-of-the-horns-finger-width
+		content ""
+		background $sign-of-the-horns-color
+		position absolute
+		top 50px
+		border-radius 25px
+		right -20px
+		border $stroke-size solid $bg-color
+		transform rotate(5deg)
+
+

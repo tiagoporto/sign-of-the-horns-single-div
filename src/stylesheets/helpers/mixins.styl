@@ -1,0 +1,125 @@
+animation($name, $duration, $timing-function, $delay, $iteration-count, $direction, $fill-mode, $play-state)
+  -webkit-animation-name: $name
+  -o-animation-name: $name
+  animation-name: $name
+  -webkit-animation-duration: $duration
+  -o-animation-duration: $duration
+  animation-duration: $duration
+  -webkit-animation-timing-function: $timing-function
+  -o-animation-timing-function: $timing-function
+  animation-timing-function: $timing-function
+  -webkit-animation-delay: $delay
+  -o-animation-delay: $delay
+  animation-delay: $delay
+  -webkit-animation-iteration-count: $iteration-count
+  -o-animation-iteration-count: $iteration-count
+  animation-iteration-count: $iteration-count
+  -webkit-animation-direction: $direction
+  -o-animation-direction: $direction
+  animation-direction: $direction
+  -webkit-animation-fill-mode: $fill-mode
+  -o-animation-fill-mode: $fill-mode
+  animation-fill-mode: $fill-mode
+  -webkit-animation-play-state: $play-state
+  -o-animation-play-state: $play-state
+  animation-play-state: $play-state
+// @mixin animation($animate)
+// 	$max: length($animate)
+// 	$animations: ''
+// 	@for $i from 1 through $max
+// 		$animations: #{$animations + nth($animate, $i)}
+// 		@if $i < $max
+// 			$animations: #{$animations + " "}
+// 	-webkit-animation: $animations
+// 	-moz-animation: $animations
+// 	-o-animation: $animations
+// 	animation: $animations
+// Triangule Mixin
+// Created by Stephen Burgess
+// http://minimalmonkey.com/sass-triangle-mixin/
+// @param width     : px, em
+// @param height    : px, em
+// @param direction : up, down, left, right
+// @param color     : hex, rgb
+arrow($width = 20px, $height = 20px, $direction = up, $color = red)
+  width: 0
+  height: 0
+  if $direction == right
+    border-top: $height / 2 solid transparent
+    border-bottom: $height / 2 solid transparent
+    border-left: $width solid $color
+  if $direction == left
+    border-top: $height / 2 solid transparent
+    border-bottom: $height / 2 solid transparent
+    border-right: $width solid $color
+  if $direction == up
+    border-left: $width / 2 solid transparent
+    border-right: $width / 2 solid transparent
+    border-bottom: $height solid $color
+  if $direction == down
+    border-left: $width / 2 solid transparent
+    border-right: $width / 2 solid transparent
+    border-top: $height solid $color
+
+background-size($value)
+  -webkit-background-size: $value
+  -moz-background-size: $value
+  -o-background-size: $value
+  background-size: $value
+
+// Acceptable values
+// content-box|border-box|initial|inherit
+// Content is the default W3C model
+box-sizing($type = border-box)
+  -webkit-box-sizing: $type
+  -moz-box-sizing: $type
+  box-sizing: $type
+
+columns($count, $width = null, $gap = null)
+  -webkit-columns: $width $count
+  -moz-columns: $width $count
+  columns: $width $count
+  if $gap != null
+    -webkit-column-gap: $gap
+    -moz-column-gap: $gap
+    column-gap: $gap
+
+// Acceptable values
+// blur() | brightness() | contrast() | grayscale() | invert()
+// opacity() | saturate() | sepia() | hue-rotate() | drop-shadow()
+filter($parameters)
+  -webkit-filter: $parameters
+  -moz-filter: $parameters
+  -ms-filter: $parameters
+  filter: $parameters
+
+font-face($name, $filename, $eot-id = $name, $weight = false, $style = false)
+	$iefont = unquote("#{$filename}.eot?#iefix")
+
+	@font-face
+		font-family: quote($name)
+
+		src: url('#{$font-path}#{$filename}.eot')
+
+		src: url('#{$font-path}#{$iefont}') format('embedded-opentype'), /*IE6-IE8*/ url('#{$font-path}#{$filename}.woff') format('woff'), /*Modern Browsers*/ url('#{$font-path}#{$filename}.ttf')  format('truetype'), /*Safari, Android, iOS*/ url('#{$font-path}#{$filename}.svg##{$eot-id}') format('svg') /*Legacy iOS*/
+
+		if $weight
+			font-weight: $weight
+
+		if $style
+			font-style: $style
+
+border-radius()
+	-webkit-border-radius: arguments
+	-moz-border-radius: arguments
+	border-radius: arguments
+
+box-shadow()
+	-webkit-box-shadow: arguments
+	-moz-box-shadow: arguments
+	box-shadow: arguments
+
+transform()
+	-ms-transform: arguments /* IE 9 */
+	-webkit-transform: arguments /* Chrome, Safari, Opera */
+	transform: arguments
