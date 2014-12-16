@@ -32,7 +32,7 @@ var		   gulp = require('gulp'),
 	basePaths = {
 		 src: 'src/',
 		dest: 'public/',
-		build: './'
+		build: './../'
 	},
 
 	assetsFolder = {

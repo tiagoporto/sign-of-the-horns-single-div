@@ -219,20 +219,19 @@ pip-log.txt
 ## NPM Dependencies
 #################
 
-node_modules/**/*
+project/node_modules/**/*
 
 
 #################
 ## SASS Cache
 #################
 
-.sass-cache/**/*
+project/.sass-cache/**/*
 
 #################
 ## Gulp.js Template
 #################
 
-build/**/*
-public/css/**
-public/images/**
-public/js/**
+project/public/css/**
+project/public/images/**
+project/public/js/**
