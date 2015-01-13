@@ -1,30 +1,51 @@
-/*
+@charset "UTF-8"
+/*!
+	Sign Of The Horns
 	Author: Tiago Porto - http://www.tiagoporto.com
-	https://github.com/tiagoporto
+	https://github.com/tiagoporto/sign-of-the-horns-css
 	Contact: me@tiagoporto.com
 */
-// Helpers
-@import 'helpers/variables'
-@import 'helpers/mixins'
-// @import 'helpers/functions'
-// @import 'typography/typography'
-@import 'dependencies/outdatedbrowser-1.1.0.css'
 
+// Helpers
+@import "helpers/_variables";
+@import "helpers/_mixins";
+@import "helpers/_functions";
+// @import "helpers/_sprite"
+
+//If you will use bootstrap you can remove these imports
+//============================================================//
+/* Web Fonts */
+@import "typography/_web-fonts";
+// @import "typography/_typography";
+
+// Reset and normalize
+// @import "dependencies/_normalize-3.0.2"
+
+// Grid System
+// @import "dependencies/_semantic.gs-1.2"
 //============================================================//
 
-/* Main Styles */
+// Dependencies
+@import "dependencies/_outdatedbrowser-1.1.0"
+// @import "dependencies/_animate"
+// @import "dependencies/_bootstrap-3.3.1"
 
-@import 'base'
+/* Main Styles */
+@import "_base";
+
 
 /* Media Queries */
 // @media print
-//   @import 'media_queries/print'
-// //480px
+	// @import "media_queries/_print"
+
+//480px
 // @media (max-width: 30em)
-//   @import 'media_queries/max_480'
-// // 481px - 768em
+	// @import "media_queries/_max_480"
+
+// 481px - 768em
 // @media (min-width: 30.063em) and (max-width: 48em)
-//   @import 'media_queries/min_481_max_768'
-// // 769px - 992px
+	// @import "media_queries/_min_481_max_768"
+
+// 769px - 992px
 // @media (min-width: 48.063em) and (max-width: 62em)
-//   @import 'media_queries/min_769_max_992'
+	// @import "media_queries/_min_769_max_992"
