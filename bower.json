@@ -1,0 +1,7 @@
+{
+  "name": "sign-of-the-horns-css",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

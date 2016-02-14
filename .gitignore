@@ -75,7 +75,6 @@ build/
 *.vssscc
 .builds
 *.pidb
-*.log
 *.scc
 
 # Visual C++ cache files
@@ -205,6 +204,7 @@ develop-eggs/
 pip-log.txt
 
 # Unit test / coverage reports
+coverage
 .coverage
 .tox
 
@@ -214,16 +214,38 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
+#################
+## Cordova
+#################
+platforms/*
+plugins/*
 
 #################
 ## NPM Dependencies
 #################
 
-PROJECT/node_modules/**/*
+node_modules/
 
+#################
+## Bower Components
+#################
+
+bower_components/
 
 #################
 ## SASS Cache
 #################
 
-PROJECT/.sass-cache/**/*
+.sass-cache/
+
+#################
+## Swill boilerplate
+#################
+
+build/
+
+#################
+## Gh-pages
+#################
+
+.publish
