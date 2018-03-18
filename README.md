@@ -1,15 +1,3 @@
 # Sign Of The Horns - Made With CSS
 
-![Sign Of the Horns](http://tiagoporto.github.io/sign-of-the-horns-css/images/icon.svg)
-
-** Work In Progress **
-
-
-Uses the following technologies:
-
-* [gulp.js](http://gulpjs.com/)
-* [Stylus](http://learnboost.github.io/stylus/)
-
-## Features
-
-*
+![Sign Of the Horns](https://raw.githubusercontent.com/tiagoporto/sign-of-the-horns-css/master/src/images/touch/chrome-touch-icon-192x192.png)
