@@ -17,12 +17,15 @@
     "npm": ">= 10"
   },
   "scripts": {
+    "prepare": "husky",
     "check-formatting": "prettier --check --ignore-unknown \"**/*\"",
-    "prepare": "husky"
+    "lint:styles": "stylelint \"**/*.styl\""
   },
   "devDependencies": {
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "stylelint": "^16.2.1",
+    "stylelint-stylus": "^1.0.0"
   }
 }

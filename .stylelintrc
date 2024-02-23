@@ -1,0 +1,12 @@
+{
+  "extends": ["stylelint-stylus/standard"],
+  "rules": {
+    "stylus/declaration-colon": "always",
+    "stylus/selector-type-no-unknown": [
+      true,
+      {
+        "ignore": ["default-namespace"]
+      }
+    ]
+  }
+}

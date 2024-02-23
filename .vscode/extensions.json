@@ -4,6 +4,6 @@
   "recommendations": [
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
-    "thisismanta.stylus-supremacy"
+    "stylelint.vscode-stylelint"
   ]
 }
