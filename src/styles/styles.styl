@@ -20,7 +20,6 @@
    Main Styles
    ================================================================== */
 @import "_base"
-
 @import "components/_sign-of-the-horns"
 @import "components/_header"
 @import "components/_headers"
@@ -32,7 +31,7 @@
    ================================================================== */
 
 @media print
-	@import "media_queries/_print"
+  @import "media_queries/_print"
 
 /*!
 *
@@ -40,10 +39,7 @@
 * http://www.intridea.com/blog/2014/5/8/better-font-smoothing-in-chrome-on-mac-os-x
 *
 */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25),\
-	only screen and ( min-device-pixel-ratio: 1.25),\
-	only screen and ( min-resolution: 200dpi),\
-	only screen and ( min-resolution: 1.25dppx)
+@media only screen and (-webkit-min-device-pixel-ratio 1.25), only screen and ( min-device-pixel-ratio 1.25), only screen and ( min-resolution 200dpi), only screen and ( min-resolution 1.25dppx)
 
-	body
-		-webkit-font-smoothing: subpixel-antialiased
+  body
+    -webkit-font-smoothing: subpixel-antialiased

@@ -1,0 +1,6 @@
+{
+  "stylelint.validate": ["stylus"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "always"
+  }
+}
