@@ -15,5 +15,11 @@
   "engines": {
     "node": ">= 20",
     "npm": ">= 10"
+  },
+  "scripts": {
+    "check-formatting": "prettier --check --ignore-unknown \"**/*\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
   }
 }
