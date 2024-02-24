@@ -1,0 +1,46 @@
+@use '../settings/variables' as *;
+
+$small-screen: 500px;
+$animation-duration: octocat-wave 560ms ease-in-out;
+
+.github-corner {
+  svg {
+    fill: #fff;
+    color: $bg-color;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+  }
+
+  &:hover {
+    @media (min-width: $small-screen) {
+      .octo-arm {
+        animation: $animation-duration;
+      }
+    }
+  }
+
+  .octo-arm {
+    @media (max-width: $small-screen) {
+      animation: $animation-duration;
+    }
+  }
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "Sign Of The Horns (Rock On!)",
+  "name": "Single DIV",
+  "icons": [
+    {
+      "src": "./images/touch/chrome-touch-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
+}
