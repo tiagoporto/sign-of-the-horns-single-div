@@ -4,6 +4,7 @@
   "recommendations": [
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
+    "mrmlnc.vscode-scss",
     "stylelint.vscode-stylelint"
   ]
 }
