@@ -1,5 +1,5 @@
 {
-  "stylelint.validate": ["stylus"],
+  "stylelint.validate": ["scss"],
   "editor.codeActionsOnSave": {
     "source.fixAll.stylelint": "always"
   }

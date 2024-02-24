@@ -1,4 +1,4 @@
 {
   "*": "prettier --check --ignore-unknown --write",
-  "*.styl": "stylelint \"**/*.styl\" --fix"
+  "*.scss": "stylelint \"**/*.scss\" --fix"
 }
