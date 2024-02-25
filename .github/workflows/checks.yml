@@ -24,3 +24,6 @@ jobs:
 
       - name: Check Formatting
         run: npm run check-formatting
+
+      - name: Lint styles
+        run: npm run lint:styles
