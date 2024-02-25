@@ -28,5 +28,8 @@ jobs:
       - name: Check Docs
         run: npm run check-docs
 
+      - name: Lint
+        run: npm run lint
+
       - name: Lint styles
         run: npm run lint:styles
