@@ -12,7 +12,7 @@ Access [https://tiagoporto.github.io/sign-of-the-horns-single-div/](https://tiag
 
 ### Pre-requirements
 
-- [git](https://git-scm.com/)
+- [git](https://git-scm.com)
 - [nvm](https://github.com/nvm-sh/nvm)
 
 ### Install node

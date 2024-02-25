@@ -5,6 +5,7 @@
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
     "mrmlnc.vscode-scss",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "unifiedjs.vscode-remark"
   ]
 }
