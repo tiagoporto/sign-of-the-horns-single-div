@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sign Of The Horns (Rock On!) - Single DIV</title>
     <meta name="description" content="Sign of the horns - Single DIV - CSS" />
-    <!-- TODO: manifest -->
-    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- For browsers that don't support .svg favicons (pretty much just Safari right now): -->
+    <link rel="icon" href="/icon.png" type="image/png" />
+
+    <!-- For browsers that DO support SVG favicons (most of them now): -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+
+    <!-- A special SVG for Safari assuming a single color is OK: -->
+    <link rel="mask-icon" href="/safari-mask-icon.svg" color="#990000" />
 
     <!-- TODO: Open graphs -->
     <meta
@@ -24,11 +31,6 @@
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="theme-color" content="#000" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <link
-      rel="icon"
-      sizes="192x192"
-      href="images/touch/chrome-touch-icon-192x192.png"
-    />
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -40,27 +42,13 @@
       name="apple-mobile-web-app-title"
       content="Sign Of The Horns - Single DIV"
     />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 
     <!-- Tile icon for Win8 -->
     <meta name="application-name" content="Sign Of The Horns - Single DIV" />
     <meta name="msapplication-TileColor" content="#000000" />
-    <meta
-      name="msapplication-square70x70logo"
-      content="images/touch/tile.png"
-    />
-    <meta
-      name="msapplication-square150x150logo"
-      content="images/touch/tile.png"
-    />
-    <meta
-      name="msapplication-wide310x150logo"
-      content="images/touch/tile-wide.png"
-    />
-    <meta
-      name="msapplication-square310x310logo"
-      content="images/touch/tile.png"
-    />
+    <meta name="msapplication-square150x150logo" content="/touch/tile.png" />
+    <meta name="msapplication-wide310x150logo" content="/touch/tile-wide.png" />
 
     <!-- Google Tag Manager -->
     <script>
@@ -121,13 +109,10 @@
       <div id="sign-of-the-horns"></div>
     </main>
 
-    <embed
-      name="GoodEnough"
-      src="/music/Helicopt-Systemcr-9254_hifi.mp3"
-      loop="5"
-      hidden="true"
-      autostart="true"
-    />
+    <!-- <audio autoplay loop>
+      <source src="music/Helicopt-Systemcr-9254_hifi.mp3" type="audio/mp3" />
+      Your browser does not support the audio tag.
+    </audio> -->
 
     <script type="module" src="scripts/index.js"></script>
   </body>
