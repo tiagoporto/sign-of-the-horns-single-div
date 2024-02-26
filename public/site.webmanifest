@@ -1,15 +1,22 @@
 {
-  "short_name": "Sign Of The Horns (Rock On!)",
-  "name": "Single DIV",
+  "display": "standalone",
+  "name": "Sign Of The Horns",
+  "short_name": "Rock On",
+  "description": "Sign Of The Horns (Rock On!) - Single DIV",
+  "start_url": "/sign-of-the-horns-single-div/",
+  "theme_color": "#fafafa",
+  "background_color": "#fafafa",
   "icons": [
     {
-      "src": "./images/touch/chrome-touch-icon-192x192.png",
-      "type": "image/png",
+      "src": "touch/chrome-touch-icon-192x192.png",
       "sizes": "192x192",
+      "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "touch/chrome-touch-icon-192x192.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-  ],
-  "start_url": "/",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  ]
 }
