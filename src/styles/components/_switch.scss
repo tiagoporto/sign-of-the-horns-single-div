@@ -1,0 +1,57 @@
+.switch {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  border: 3px solid #343434;
+  border-radius: 20px;
+  background: #343434;
+  font-weight: bold;
+  color: #343434;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    border-radius: 20px;
+    background: white;
+    transition: all 0.3s;
+  }
+
+  & span {
+    padding: 6px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  #switch-mode:checked + &::before {
+    left: 50%;
+  }
+}
+
+#switch-mode {
+  display: none;
+
+  & + .switch span:first-child {
+    color: #343434;
+    transition: color 0.3s;
+  }
+
+  & + .switch span:last-child {
+    color: grey;
+    transition: color 0.3s;
+  }
+
+  &:checked + .switch span:first-child {
+    color: grey;
+    transition: color 0.3s;
+  }
+
+  &:checked + .switch span:last-child {
+    color: #343434;
+    transition: color 0.3s;
+  }
+}
