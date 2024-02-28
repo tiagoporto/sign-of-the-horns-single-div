@@ -7,14 +7,16 @@
     <meta name="description" content="Sign of the horns - Single DIV - CSS" />
     <link rel="manifest" href="site.webmanifest" />
 
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+
     <!-- For browsers that don't support .svg favicons (pretty much just Safari right now): -->
-    <link rel="icon" href="/icon.png" type="image/png" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
 
     <!-- For browsers that DO support SVG favicons (most of them now): -->
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
-    <!-- A special SVG for Safari assuming a single color is OK: -->
-    <link rel="mask-icon" href="/safari-mask-icon.svg" color="#990000" />
+    <!-- A special SVG for Safari -->
+    <link rel="mask-icon" href="/safari-mask-icon.svg" color="#000000" />
 
     <!-- TODO: Open graphs -->
     <meta
@@ -26,11 +28,14 @@
       property="og:url"
       content="https://tiagoporto.github.io/sign-of-the-horns-single-div/"
     />
-    <meta property="og:image" content="" />
-    <meta property="og:image:alt" content="" />
+    <meta
+      property="og:image"
+      content="https://socialify.git.ci/tiagoporto/sign-of-the-horns-single-div/image?description=1&descriptionEditable=Sign%20of%20the%20horns%20made%20with%20CSS&logo=https%3A%2F%2Fraw.githubusercontent.com%2Ftiagoporto%2Fsign-of-the-horns-single-div%2Fmain%2Fpublic%2Ffavicon.svg&name=1&owner=1&stargazers=1&theme=Light"
+    />
+    <meta property="og:image:alt" content="Sign Of The Horns" />
 
     <!-- Add to homescreen for Chrome on Android -->
-    <meta name="theme-color" content="#000" />
+    <meta name="theme-color" content="#000000" />
     <meta name="mobile-web-app-capable" content="yes" />
 
     <!-- Add to homescreen for Safari on iOS -->
@@ -46,10 +51,13 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 
     <!-- Tile icon for Win8 -->
+    <!-- Windows 8 IE 10-->
     <meta name="application-name" content="Sign Of The Horns - Single DIV" />
     <meta name="msapplication-TileColor" content="#000000" />
-    <meta name="msapplication-square150x150logo" content="/touch/tile.png" />
-    <meta name="msapplication-wide310x150logo" content="/touch/tile-wide.png" />
+    <meta name="msapplication-TileImage" content="/touch/mstile-150x150.png" />
+
+    <!-- Windows 8.1 + IE11 and above -->
+    <meta name="msapplication-config" content="browserconfig.xml" />
 
     <!-- Google Tag Manager -->
     <script>
