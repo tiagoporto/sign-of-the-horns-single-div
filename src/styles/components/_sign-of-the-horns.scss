@@ -2,133 +2,142 @@
 @use 'sass:math';
 @use '../settings/variables' as *;
 
-$sign-of-the-horns-color: yellow;
-$sign-of-the-horns-width: 360px;
-$sign-of-the-horns-height: 250px;
+%pseudo-element {
+  content: '';
+  position: absolute;
+  display: block;
+}
 
 // Palm
-#sign-of-the-horns {
-  &.detailed {
-    background: linear-gradient(
-      to bottom,
-      transparent 60%,
-      $sign-of-the-horns-color 60%
+.sign-of-the-horns {
+  &_detailed {
+    $color: #ffc927;
+    $shadow: color.scale(
+      $color: $color,
+      $lightness: -42%,
     );
-    width: $sign-of-the-horns-width;
-    height: $sign-of-the-horns-height * 2.3;
-    border-radius: 86% 58% 52% / 0 38% 43%;
+    $height: 582px;
+    $width: math.div($height, 1.6);
+    $finger-height: math.div($height, 2.85);
+    $finger-width: math.div($width, 4.2);
 
-    // position: relative;
-    // transform: scale(0.5);
     position: relative;
 
-    $finger-height: 200px;
-    $finger-width: math.div($sign-of-the-horns-width, 4) - 5px;
+    width: $width;
+    height: math.div($height, 2.5);
+    margin-top: $height - math.div($height, 2.2);
+
+    background: $color;
+    border-radius: 0 0 50% 50% / 0 50% 100% 90%;
 
     // index finger
     &::before {
-      display: block;
+      @extend %pseudo-element;
+
+      top: -(math.div($height, 1.835));
+      right: $width - $finger-width * 4;
+
       width: $finger-width;
       height: $finger-height;
-      content: '';
-      background: $sign-of-the-horns-color;
-      position: absolute;
-      top: 30px;
-      right: 20px;
+
+      background: $color;
       border-radius: 50% / 22%;
       box-shadow:
       // index finger
-        0 125px 0 $sign-of-the-horns-color,
-        -5px math.div($finger-height, 1.3) 0 color.scale($color:
-              $sign-of-the-horns-color, $lightness: -20%),
+        0 math.div($finger-height, 1.7) 0 $color,
+        -5px math.div($finger-height, 1.3) 0 $shadow,
         // middle finger
-        -$finger-width math.div($finger-height, 1.3) 0 $sign-of-the-horns-color,
-        -95px 170px 0 color.scale($color: $sign-of-the-horns-color, $lightness:
-              -20%),
+        -$finger-width math.div($finger-height, 1.3) 0 $color,
+        -95px 170px 0 $shadow,
         // ring finger
-        -($finger-width * 2) math.div($finger-height, 1.3) 0 $sign-of-the-horns-color,
-        -178px 170px 0 color.scale($color: $sign-of-the-horns-color, $lightness:
-              -20%),
+        -($finger-width * 2) math.div($finger-height, 1.3) 0 $color,
+        -178px 170px 0 $shadow,
         // pinky finger
-        -($finger-width * 3) math.div($finger-height, 3) $sign-of-the-horns-color,
-        -($finger-width * 3) math.div($finger-height, 1.3) $sign-of-the-horns-color;
+        -($finger-width * 3) math.div($finger-height, 3) $color,
+        -($finger-width * 3) math.div($finger-height, 1.3) $color;
     }
 
     // thumb
     &::after {
-      display: block;
+      @extend %pseudo-element;
+
+      top: -(math.div($height, 12.8));
+      right: 70px;
+
       width: math.div($finger-height, 1.4);
       height: $finger-width + 8px;
-      content: '';
-      background: $sign-of-the-horns-color;
-      position: absolute;
-      top: 300px;
-      right: 70px;
+
+      background: $color;
       border-radius: 40% 35% 0 / 50%;
       box-shadow:
-        70px 0 0 $sign-of-the-horns-color,
-        -16px 8px 0 color.scale($color: $sign-of-the-horns-color, $lightness: -20%),
-        -5px -1px 0
-          color.scale($color: $sign-of-the-horns-color, $lightness: -20%),
-        50px 0 0 $sign-of-the-horns-color,
-        48px -1px 0 color.scale($color: $sign-of-the-horns-color, $lightness: -20%);
+        70px 0 0 $color,
+        -16px 8px 0 $shadow,
+        -5px -1px 0 $shadow,
+        50px 0 0 $color,
+        48px -1px 0 $shadow;
     }
   }
 
-  &.simplified {
-    $sign-of-the-horns-color: #fff;
-    $sign-of-the-horns-width: 216px;
+  &_simplified {
+    $color: #fff;
+    $width: 216px;
     $sign-of-the-horns-top-finger: 60px;
     $stroke-size: 8px;
     $sign-of-the-horns-finger-width: 44px;
     $sign-of-the-horns-finger-height: 120px;
 
-    border: 8px solid #000;
-    background: $sign-of-the-horns-color;
-    width: $sign-of-the-horns-width;
-    height: 150px;
-    border-top: 0;
-    border-radius: 0 0 50px 50px;
     position: relative;
 
+    width: $width;
+    height: 150px;
+    margin-top: 300px;
+
+    background: $color;
+    border: 8px solid #000;
+    border-top: 0;
+    border-radius: 0 0 50px 50px;
+
     &::before {
+      @extend %pseudo-element;
+
+      top: -100px;
+
       width: $sign-of-the-horns-finger-width;
       height: $sign-of-the-horns-finger-height;
-      content: '';
-      background: $sign-of-the-horns-color;
-      position: absolute;
-      top: -100px;
+
+      background: $color;
       border-radius: 20px;
       box-shadow:
-        0 20px 0 $sign-of-the-horns-color,
+        0 20px 0 $color,
         0 0 0 $stroke-size $bg-color,
         ($sign-of-the-horns-finger-width + $stroke-size)
-          $sign-of-the-horns-top-finger 0 $sign-of-the-horns-color,
+          $sign-of-the-horns-top-finger 0 $color,
         ($sign-of-the-horns-finger-width + $stroke-size)
           $sign-of-the-horns-top-finger 0 $stroke-size $bg-color,
         (($sign-of-the-horns-finger-width * 2) + ($stroke-size * 2))
-          $sign-of-the-horns-top-finger 0 $sign-of-the-horns-color,
+          $sign-of-the-horns-top-finger 0 $color,
         (($sign-of-the-horns-finger-width * 2) + ($stroke-size * 2))
           $sign-of-the-horns-top-finger 0 $stroke-size $bg-color,
-        (($sign-of-the-horns-finger-width * 3) + ($stroke-size * 3)) 0 0
-          $sign-of-the-horns-color,
+        (($sign-of-the-horns-finger-width * 3) + ($stroke-size * 3)) 0 0 $color,
         (($sign-of-the-horns-finger-width * 3) + ($stroke-size * 3)) 20px 0
-          $sign-of-the-horns-color,
+          $color,
         (($sign-of-the-horns-finger-width * 3) + ($stroke-size * 3)) 0 0
           $stroke-size $bg-color;
     }
 
     &::after {
+      @extend %pseudo-element;
+
+      top: 50px;
+      right: -20px;
+      transform: rotate(5deg);
+
       width: 100px;
       height: $sign-of-the-horns-finger-width;
-      content: '';
-      background: $sign-of-the-horns-color;
-      position: absolute;
-      top: 50px;
-      border-radius: 25px;
-      right: -20px;
+
+      background: $color;
       border: $stroke-size solid $bg-color;
-      transform: rotate(5deg);
+      border-radius: 25px;
     }
   }
 }

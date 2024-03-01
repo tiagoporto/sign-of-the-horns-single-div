@@ -1,11 +1,11 @@
-document.querySelector('#switch-mode').addEventListener('change', (event) => {
+document.querySelector('#switch-input').addEventListener('change', (event) => {
   const signOfTheHornsClasses =
     document.querySelector('#sign-of-the-horns').classList
   if (event.target.checked) {
-    signOfTheHornsClasses.remove('detailed')
-    signOfTheHornsClasses.add('simplified')
+    signOfTheHornsClasses.remove('sign-of-the-horns_detailed')
+    signOfTheHornsClasses.add('sign-of-the-horns_simplified')
   } else {
-    signOfTheHornsClasses.add('detailed')
-    signOfTheHornsClasses.remove('simplified')
+    signOfTheHornsClasses.add('sign-of-the-horns_detailed')
+    signOfTheHornsClasses.remove('sign-of-the-horns_simplified')
   }
 })

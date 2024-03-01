@@ -1,38 +1,50 @@
 .switch {
+  cursor: pointer;
+
   position: relative;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   width: fit-content;
-  border: 3px solid #343434;
-  border-radius: 20px;
-  background: #343434;
+
+  // padding: 10px;
+  margin: 0;
+
   font-weight: bold;
   color: #343434;
-  cursor: pointer;
+
+  background: #343434;
+  border: 10px solid #343434;
+  border-radius: 20px;
 
   &::before {
     content: '';
+
     position: absolute;
+    left: 0%;
+
     width: 50%;
     height: 100%;
-    left: 0%;
-    border-radius: 20px;
+
     background: white;
+    border-radius: 10px;
+
     transition: all 0.3s;
   }
 
   & span {
-    padding: 6px;
-    text-align: center;
     z-index: 1;
+    padding: 5px 10px;
+    text-align: center;
   }
 
-  #switch-mode:checked + &::before {
+  #switch-input:checked + &::before {
     left: 50%;
   }
 }
 
-#switch-mode {
+#switch-input {
   display: none;
 
   & + .switch span:first-child {

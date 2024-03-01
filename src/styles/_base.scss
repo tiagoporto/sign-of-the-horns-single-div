@@ -13,12 +13,15 @@
 }
 
 html {
-  font-size: 100%;
   box-sizing: border-box;
   height: 100%;
+
+  font-size: 100%;
+
   background-color: #272626;
   background-image: linear-gradient(-45deg, #000, #353434, #414040, #000);
   background-size: 400% 400%;
+
   animation: gradient 10s ease infinite;
 
   @media screen and (width <= 768px) {
@@ -42,21 +45,30 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+
   font: normal normal #{$base-font-size}/#{$base-line-height} $font-family-base;
+  font-feature-settings: 'liga', 'kern';
   color: $base-text-color;
+  text-rendering: optimizelegibility;
+
   background-image: $bg-color;
   background-image: url('../images/skulls.svg');
   background-size: 180px 180px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  text-rendering: optimizelegibility;
+
+  transition: background-size 0.5s;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga', 'kern';
-  transition: background-size 0.5s;
+
+  ::selection {
+    color: $selection-color;
+    background: $selection-bg-color;
+  }
 
   @media screen and (width <= 768px) {
     background-size: 100px 100px;
@@ -69,10 +81,5 @@ body {
     only screen and (resolution >= 200dpi),
     only screen and (resolution >= 1.25dppx) {
     -webkit-font-smoothing: subpixel-antialiased;
-  }
-
-  ::selection {
-    background: $selection-bg-color;
-    color: $selection-color;
   }
 }

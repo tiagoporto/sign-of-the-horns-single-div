@@ -5,12 +5,15 @@ $animation-duration: octocat-wave 560ms ease-in-out;
 
 .github-corner {
   svg {
-    fill: #fff;
-    color: $bg-color;
     position: absolute;
     top: 0;
-    border: 0;
     right: 0;
+
+    color: $bg-color;
+
+    border: 0;
+
+    fill: #fff;
   }
 
   &:hover {
