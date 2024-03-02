@@ -33,3 +33,6 @@ jobs:
 
       - name: Lint styles
         run: npm run lint:styles
+
+      - name: Build
+        run: npm run build
