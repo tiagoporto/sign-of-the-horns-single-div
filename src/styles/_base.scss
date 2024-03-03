@@ -16,18 +16,26 @@ html {
 
   font-size: 100%;
 
-  background-color: var(--bg-color);
+  background-color: var(--globar-bg-color);
   background-image: radial-gradient(
-    circle at center 65%,
-    #202020 0,
-    var(--bg-color) 70%
+    circle at center 60%,
+    #202020 10%,
+    var(--globar-bg-color) 70%
   );
 
-  @media screen and (width <= 600px) {
+  @media screen and (orientation: portrait) and (height <= 2000px) {
     background-image: radial-gradient(
-      circle at center 58%,
-      #4a4949 0,
-      var(--bg-color) 80%
+      ellipse closest-corner at center 30%,
+      #202020 0,
+      var(--globar-bg-color) 90%
+    );
+  }
+
+  @media screen and (orientation: portrait) and (height <= 1000px) {
+    background-image: radial-gradient(
+      circle at center 50%,
+      #202020 25%,
+      var(--globar-bg-color) 100%
     );
   }
 }
