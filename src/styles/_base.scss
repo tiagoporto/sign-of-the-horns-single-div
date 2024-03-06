@@ -11,6 +11,8 @@
 }
 
 html {
+  overflow: hidden;
+
   box-sizing: border-box;
   height: 100%;
 
@@ -41,6 +43,7 @@ html {
 }
 
 body {
+  overflow: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
