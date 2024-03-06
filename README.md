@@ -14,7 +14,7 @@
 
 ## Demo 🚀
 
-Access [https://tiagoporto.github.io/sign-of-the-horns-single-div/](https://tiagoporto.github.io/sign-of-the-horns-single-div/)
+Access <https://tiagoporto.github.io/sign-of-the-horns-single-div/>
 
 ## Development 🛠
 
