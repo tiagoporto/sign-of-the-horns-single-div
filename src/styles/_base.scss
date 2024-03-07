@@ -1,19 +1,6 @@
-/*!
-*
-* Box model reset
-* http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
-*
-*/
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 html {
   overflow: hidden;
 
-  box-sizing: border-box;
   height: 100%;
 
   font-size: 100%;
@@ -57,6 +44,7 @@ body {
   text-rendering: optimizelegibility;
 
   background-image: url('../images/skulls.svg');
+  background-repeat: repeat;
   background-size: 180px 180px;
 
   transition: ease-out background-size 1s;
