@@ -24,7 +24,7 @@
     "preview": "vite preview",
     "check-docs": "remark --frail .",
     "check-formatting": "prettier --check --ignore-unknown \"**/*\"",
-    "lint": "eslint . --ext .js,.md --max-warnings 0",
+    "lint": "eslint . --max-warnings 0",
     "lint:styles": "stylelint \"**/*.scss\""
   },
   "devDependencies": {

@@ -20,6 +20,7 @@ const jsConfig = {
 }
 
 module.exports = {
+  ignorePatterns: ['dist'],
   env: {
     browser: true,
     es2021: true,
@@ -53,14 +54,14 @@ module.exports = {
     },
     // .js files
     {
-      files: ['*.{js,mjs}'],
+      files: ['*.{js,mjs,cjs}'],
       excludedFiles: ['**/*.{md}/*.{js,mjs,javascript}', '**/*.test.js'],
       extends: [...jsConfig.extends],
       rules: { ...jsConfig.rules },
     },
     // .js in Markdown files
     {
-      files: ['**/*.md/*.{js,mjs,javascript}'],
+      files: ['**/*.md/*.{js,javascript}'],
       extends: [...jsConfig.extendsMD],
       rules: { ...jsConfig.rulesMD },
     },
