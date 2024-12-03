@@ -1,5 +1,6 @@
 {
   "name": "sign-of-the-horns",
+  "version": "0.0.0-development",
   "description": "Sign of the horns - Single DIV",
   "keywords": [
     "sign-of-the-horns",
@@ -13,8 +14,8 @@
   },
   "private": true,
   "engines": {
-    "node": ">= 20",
-    "npm": ">= 10"
+    "node": ">=22",
+    "npm": ">=10"
   },
   "type": "module",
   "scripts": {
