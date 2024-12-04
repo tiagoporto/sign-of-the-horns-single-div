@@ -33,7 +33,7 @@ jobs:
 
       - name: Build app
         env:
-          VITE_GTM_ID: ${{ vars.VITE_GTM_ID }}
+          VITE_GTAG_ID: ${{ vars.VITE_GTAG_ID }}
         run: npm run build
 
       - name: Setup Pages
