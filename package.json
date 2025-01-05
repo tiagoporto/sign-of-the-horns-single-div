@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@tiagoporto/dependabot-config": "^1.0.0",
-    "@tiagoporto/prettier-config": "^1.0.0-alpha.2",
+    "@tiagoporto/prettier-config": "^1.0.0",
     "@tiagoporto/remark-config": "^1.0.0-alpha.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
