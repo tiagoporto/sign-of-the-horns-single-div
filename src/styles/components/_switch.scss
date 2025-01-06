@@ -1,33 +1,24 @@
 .switch {
-  cursor: pointer;
-
   position: relative;
-
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
   width: fit-content;
-  margin: 0;
-
-  font-weight: bold;
-  color: #343434;
-
-  background: #343434;
   border: 10px solid #343434;
   border-radius: 20px;
+  margin: 0;
+  background: #343434;
+  color: #343434;
+  cursor: pointer;
+  font-weight: bold;
+  grid-template-columns: repeat(2, 1fr);
 
   &::before {
-    content: '';
-
     position: absolute;
     left: 0%;
-
     width: 50%;
     height: 100%;
-
-    background: white;
     border-radius: 10px;
-
+    background: white;
+    content: '';
     transition: all 0.3s;
   }
 

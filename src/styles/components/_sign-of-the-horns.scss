@@ -1,9 +1,9 @@
 @use 'sass:math';
 
 %pseudo-element {
-  content: '';
   position: absolute;
   display: block;
+  content: '';
 }
 
 // Palm
@@ -22,13 +22,11 @@
     --shadow: color-mix(in srgb, black 34%, var(--bg-color));
 
     position: relative;
-
     width: $width;
     height: math.div($height, 2.5);
-    margin-top: math.round($height - math.div($height, 2.2));
-
-    background-color: var(--bg-color);
     border-radius: 0 0 50% 50% / 0 50% 100% 90%;
+    margin-top: math.round($height - math.div($height, 2.2));
+    background-color: var(--bg-color);
 
     // index finger
     &::before {
@@ -36,12 +34,10 @@
 
       top: -(math.round(math.div($height, 1.835)));
       right: $width - $finger-width * 4;
-
       width: $finger-width;
       height: $finger-height;
-
-      background: var(--bg-color);
       border-radius: 50% / 22%;
+      background: var(--bg-color);
       box-shadow:
         // index finger
         0 math.div($finger-height, 1.65) 0 var(--bg-color),
@@ -65,12 +61,10 @@
 
       top: -(math.round(math.div($height, 13.5)));
       right: 0;
-
       width: $thumb-width;
       height: math.round($finger-width * 1.08);
-
-      background: var(--bg-color);
       border-radius: 50% 35% 0 40% / 50% 45% 50% 45%;
+      background: var(--bg-color);
       box-shadow:
         -(math.div($thumb-width, 2)) 0 0 var(--bg-color),
         -($thumb-width * 0.585) ($finger-height * 0.035) 0 var(--shadow),
@@ -93,28 +87,24 @@
     --stroke-color: black;
 
     position: relative;
-
     width: $width;
     height: math.div($height, 2.3);
+    border: $stroke-size solid var(--stroke-color);
+    border-radius: 0 0 35% 35% / 50%;
+    border-top: 0;
     margin-top: 240px;
     margin-right: 12px;
-
     background-color: var(--bg-color);
-    border: $stroke-size solid var(--stroke-color);
-    border-top: 0;
-    border-radius: 0 0 35% 35% / 50%;
 
     // Pinky finger
     &::before {
       @extend %pseudo-element;
 
       top: -170px;
-
       width: $finger-width;
       height: $finger-height;
-
-      background: var(--bg-color);
       border-radius: 50% / 20%;
+      background: var(--bg-color);
 
       // Pinky finger
       box-shadow:
@@ -147,14 +137,12 @@
 
       top: -25px;
       right: 10px;
-      transform: rotate(100deg);
-
       width: $finger-width + $stroke-size * 2;
       height: $finger-height + $stroke-size * 2;
-
-      background: var(--bg-color);
       border: $stroke-size solid var(--stroke-color);
       border-radius: 60% / 22% 22% 26% 28%;
+      background: var(--bg-color);
+      transform: rotate(100deg);
     }
   }
 }

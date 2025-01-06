@@ -1,16 +1,13 @@
 html {
   overflow: hidden;
-
   height: 100%;
-
-  font-size: 100%;
-
   background-color: var(--globar-bg-color);
   background-image: radial-gradient(
     circle at center 60%,
     #202020 10%,
     var(--globar-bg-color) 70%
   );
+  font-size: 100%;
 
   @media screen and (orientation: portrait) and (height <= 2000px) {
     background-image: radial-gradient(
@@ -30,31 +27,26 @@ html {
 }
 
 body {
-  overflow: auto;
   display: flex;
+  overflow: auto;
+  height: 100%;
   flex-direction: column;
   align-items: center;
-
-  height: 100%;
-
-  font: normal normal var(--base-font-size) / var(--base-line-height)
-    var(--font-family-base);
-  font-feature-settings: 'liga', 'kern';
-  color: var(--base-text-color);
-  text-rendering: optimizelegibility;
-
   background-image: url('../images/skulls.svg');
   background-repeat: repeat;
   background-size: 180px 180px;
-
-  transition: ease-out background-size 1s;
-
+  color: var(--base-text-color);
+  font: normal normal var(--base-font-size) / var(--base-line-height)
+    var(--font-family-base);
+  font-feature-settings: 'liga', 'kern';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  transition: ease-out background-size 1s;
 
   ::selection {
-    color: var(--selection-color);
     background: var(--selection-bg-color);
+    color: var(--selection-color);
   }
 
   @media screen and (width <= 768px) {
