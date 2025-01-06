@@ -2,6 +2,10 @@ name: Deploy to Pages
 
 on: workflow_dispatch
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
   pages: write
@@ -9,7 +13,7 @@ permissions:
 
 jobs:
   checks:
-    uses: ./.github/workflows/checks.yaml
+    uses: ./.github/workflows/checks.yml
     secrets: inherit
 
   deploy:

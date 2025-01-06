@@ -8,7 +8,7 @@
 
 ## Status ✅
 
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/sign-of-the-horns-single-div/ci.yaml?label=checks&style=flat-square)](https://github.com/tiagoporto/sign-of-the-horns-single-div/actions/workflows/ci.yaml)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/tiagoporto/sign-of-the-horns-single-div/checks.yml?label=checks&style=flat-square)](https://github.com/tiagoporto/sign-of-the-horns-single-div/actions/workflows/checks.yml)
 
 ## Demo 🚀
 
