@@ -6,8 +6,7 @@ on:
     - cron: '0 3 1,15 * *'
 
 jobs:
-  checks:
-    name: Run Checks
+  dead_urls:
     runs-on: ubuntu-latest
 
     steps:
