@@ -28,7 +28,7 @@ jobs:
         run: npm ci --ignore-scripts
 
       - name: Check Formatting
-        run: npm run check-formatting
+        run: npm run formatting:check
 
       - name: Lint
         run: npm run lint
