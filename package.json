@@ -1,23 +1,11 @@
 {
   "name": "sign-of-the-horns",
-  "version": "0.0.0-development",
-  "description": "Sign of the horns - Single DIV",
-  "keywords": [
-    "sign-of-the-horns",
-    "single-div",
-    "css"
-  ],
-  "homepage": "http://tiagoporto.github.io/sign-of-the-horns-css",
-  "author": {
-    "name": "Tiago Porto",
-    "url": "http://tiagoporto.com"
-  },
   "private": true,
+  "type": "module",
   "engines": {
     "node": ">=22",
     "npm": ">=10"
   },
-  "type": "module",
   "scripts": {
     "prepare": "husky",
     "start": "vite",
