@@ -1,10 +1,7 @@
 {
-  "stylelint.validate": ["scss"],
   "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": "always"
+    "source.fixAll": "explicit"
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "unifiedjs.vscode-remark",
-    "editor.formatOnSave": true
-  }
+  "editor.formatOnSave": true,
+  "stylelint.validate": ["css", "scss"]
 }
