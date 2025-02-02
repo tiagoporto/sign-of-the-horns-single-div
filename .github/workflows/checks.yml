@@ -18,23 +18,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup node
         uses: actions/setup-node@v4
         with:
           node-version-file: '.nvmrc'
-          cache: 'npm'
+          cache: 'pnpm'
 
       - name: Install Dependencies
-        run: npm ci --ignore-scripts
+        run: pnpm install --frozen-lockfile --ignore-scripts
 
       - name: Check Formatting
-        run: npm run formatting:check
+        run: pnpm formatting:check
 
       - name: Lint
-        run: npm run lint
+        run: pnpm lint
 
       - name: Lint styles
-        run: npm run lint:styles
+        run: pnpm lint:styles
 
       - name: Build
-        run: npm run build
+        run: pnpm build

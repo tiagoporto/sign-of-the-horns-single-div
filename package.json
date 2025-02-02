@@ -4,17 +4,20 @@
   "type": "module",
   "engines": {
     "node": ">=22",
-    "npm": ">=10"
+    "npm": "uses pnpm",
+    "pnpm": ">=9"
   },
+  "packageManager": "pnpm@9.15.2",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky",
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "checks": "npm run check-docs && npm run formatting:check && npm run lint && npm run lint:styles",
+    "checks": "pnpm check-docs && pnpm formatting:check && pnpm lint && pnpm lint:styles",
     "check-docs": "remark --frail .",
     "formatting:check": "prettier --check --ignore-unknown \"**/*\"",
-    "formatting": "npm run formatting:check -- --write",
+    "formatting": "pnpm formatting:check --write",
     "lint": "eslint . --max-warnings 0",
     "lint:styles": "stylelint \"**/*.{css,scss}\"",
     "lint:styles:fix": "stylelint \"**/*.{css,scss}\" --fix"
