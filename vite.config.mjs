@@ -7,6 +7,13 @@ export default defineConfig({
   base: '/sign-of-the-horns-single-div/',
   root: './src',
   publicDir: '../public',
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern',
+      },
+    },
+  },
   build: {
     outDir: '../dist',
     emptyOutDir: true,
