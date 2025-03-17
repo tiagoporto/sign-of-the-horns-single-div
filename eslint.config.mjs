@@ -11,4 +11,8 @@ export default [
     },
   },
   ...tpConfig.configs.base,
+  {
+    files: ['**/*.html'],
+    rules: { 'jsdoc/require-jsdoc': 'off' },
+  },
 ]

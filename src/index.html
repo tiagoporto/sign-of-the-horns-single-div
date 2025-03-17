@@ -9,6 +9,20 @@
     <meta name="description" content="Sign of the horns - Single DIV - CSS" />
     <link rel="manifest" href="site.webmanifest" />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=%VITE_GTAG_ID%"
+    ></script>
+    <script>
+      globalThis.dataLayer = globalThis.dataLayer || []
+      function gtag() {
+        globalThis.dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', '%VITE_GTAG_ID%')
+    </script>
+
     <!--  Open graphs -->
     <meta
       property="og:title"
@@ -60,23 +74,6 @@
 
     <!-- Windows 8.1 + IE11 and above -->
     <meta name="msapplication-config" content="browserconfig.xml" />
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=%VITE_GTAG_ID%"
-    ></script>
-    <script>
-      globalThis.dataLayer = globalThis.dataLayer || []
-      /**
-       * Universal Analytics global function.
-       */
-      function gtag() {
-        globalThis.dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-      gtag('config', '%VITE_GTAG_ID%')
-    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -1,9 +1,7 @@
 const trackEvent = (type) => {
   if (process.env.NODE_ENV === 'production' && globalThis.gtag) {
-    globalThis.gtag('event', 'click', {
-      event_category: 'switch',
-      event_label: 'Switch Sign Of The Horns',
-      value: type,
+    globalThis.gtag('event', 'switch_sign_of_the_horns', {
+      event_label: type,
     })
   }
 }
