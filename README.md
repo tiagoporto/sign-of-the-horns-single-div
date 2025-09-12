@@ -73,4 +73,4 @@ npm start
 
 ## License 📄
 
-This project is licensed under the [MIT License](LICENSE).
+Sign Of The Horns © 2014 by Tiago Porto is licensed under [MIT License](LICENSE).
