@@ -63,7 +63,7 @@
       right: 0;
       width: $thumb-width;
       height: math.round($finger-width * 1.08);
-      border-radius: 50% 35% 0 40% / 50% 45% 50% 45%;
+      border-radius: 50% 35% 0 40% / 50% 45%;
       background: var(--bg-color);
       box-shadow:
         -(math.div($thumb-width, 2)) 0 0 var(--bg-color),
