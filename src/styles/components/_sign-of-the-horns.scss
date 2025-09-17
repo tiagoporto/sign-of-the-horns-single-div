@@ -124,7 +124,8 @@
         (($finger-width * 3) + ($stroke-size * 3)) -60px 0 var(--bg-color),
         (($finger-width * 3) + ($stroke-size * 3)) 35px 0 var(--bg-color),
         (($finger-width * 3) + ($stroke-size * 3)) 90px 0 var(--bg-color),
-        (($finger-width * 3) + ($stroke-size * 3)) -60px 0 $stroke-size var(--stroke-color),
+        (($finger-width * 3) + ($stroke-size * 3)) -60px 0 $stroke-size
+          var(--stroke-color),
         (($finger-width * 3) + ($stroke-size * 3)) 35px 0 $stroke-size
           var(--stroke-color),
         (($finger-width * 3) + ($stroke-size * 3)) 60px 0 $stroke-size
