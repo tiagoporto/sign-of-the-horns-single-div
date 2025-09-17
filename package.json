@@ -10,6 +10,7 @@
   "packageManager": "pnpm@9.15.2",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "$CI = true || dependabot-config",
     "prepare": "husky",
     "start": "vite",
     "build": "vite build",
@@ -24,7 +25,7 @@
     "lint:styles:fix": "stylelint \"**/*.{css,scss}\" --fix"
   },
   "devDependencies": {
-    "@tiagoporto/dependabot-config": "^1.5.0",
+    "@tiagoporto/dependabot-config": "^2.0.0",
     "@tiagoporto/editor-config": "^1.4.0",
     "@tiagoporto/eslint-config": "^4.6.0",
     "@tiagoporto/prettier-config": "^2.0.0",

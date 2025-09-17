@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@tiagoporto/dependabot-config':
-        specifier: ^1.5.0
-        version: 1.5.0
+        specifier: ^2.0.0
+        version: 2.0.0
       '@tiagoporto/editor-config':
         specifier: ^1.4.0
         version: 1.4.0
@@ -889,9 +889,10 @@ packages:
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
 
-  '@tiagoporto/dependabot-config@1.5.0':
-    resolution: {integrity: sha512-xS3tmXMqbfbCGzQSUdKBtKnqquJrKvD2WJ9XDyB3E08+QqjSfpL3zKJdrl9NhvZZeWVMwO1ZS6iKpDRCsgNqiw==}
-    engines: {node: '>=18'}
+  '@tiagoporto/dependabot-config@2.0.0':
+    resolution: {integrity: sha512-L5Vf+xZJZ9o8K0zpDHN33RXFJ9t52x241pRQLMsAawr1uF8bBqp4Jou1560/zbqQQzQ2RZHmHrSAUbp5ZOacaA==}
+    engines: {node: '>=22'}
+    hasBin: true
 
   '@tiagoporto/editor-config@1.4.0':
     resolution: {integrity: sha512-j2OiGG0t4FXA+zpYRl9bZbpZErCA77PD6QBP9TEsLdrPcUoI/90W5vyrYFVY4ITMO+MCNIHYdmv13urhmUP2PQ==}
@@ -5482,7 +5483,7 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tiagoporto/dependabot-config@1.5.0': {}
+  '@tiagoporto/dependabot-config@2.0.0': {}
 
   '@tiagoporto/editor-config@1.4.0': {}
 
