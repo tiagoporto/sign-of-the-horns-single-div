@@ -24,8 +24,8 @@ importers:
         specifier: ^1.9.0
         version: 1.9.0(prettier@3.6.2)(remark-cli@12.0.1)(remark@15.0.1)
       '@tiagoporto/stylelint-config':
-        specifier: ^1.1.1
-        version: 1.1.1(postcss@8.4.49)(stylelint@16.12.0(typescript@5.7.3))
+        specifier: ^1.2.0
+        version: 1.2.0(postcss@8.4.49)(stylelint@16.12.0(typescript@5.7.3))
       eslint:
         specifier: ^9.35.0
         version: 9.35.0
@@ -931,9 +931,9 @@ packages:
       remark: ^15.0.0
       remark-cli: ^12.0.0
 
-  '@tiagoporto/stylelint-config@1.1.1':
-    resolution: {integrity: sha512-i9i6YR3Ot0sAdwg1pVTlWlIMDYc1taNWbYBQ1fyopietoEEstd0r7NlW/OFZ+mTa6ro2G6xMt+MY7vJlH1iAYQ==}
-    engines: {node: '>=18'}
+  '@tiagoporto/stylelint-config@1.2.0':
+    resolution: {integrity: sha512-CWg1RLFqADgww71IRU8p03a+gemFsNpiHBCpOibqS98GvDw4mic7BiH1KPfVtpVC8LynOMWrkjds5GrdK0qajg==}
+    engines: {node: '>=20'}
     peerDependencies:
       stylelint: ^16.12.0
 
@@ -5616,7 +5616,7 @@ snapshots:
       - prettier
       - supports-color
 
-  '@tiagoporto/stylelint-config@1.1.1(postcss@8.4.49)(stylelint@16.12.0(typescript@5.7.3))':
+  '@tiagoporto/stylelint-config@1.2.0(postcss@8.4.49)(stylelint@16.12.0(typescript@5.7.3))':
     dependencies:
       stylelint: 16.12.0(typescript@5.7.3)
       stylelint-config-idiomatic-order: 10.0.0(stylelint@16.12.0(typescript@5.7.3))
