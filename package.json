@@ -15,6 +15,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "check-update": "pnpm update --interactive --latest",
     "checks": "pnpm check-docs && pnpm format:check && pnpm lint && pnpm lint:styles",
     "check-docs": "remark --frail .",
     "format:check": "prettier --check --ignore-unknown \"**/*\"",
